@@ -3,7 +3,6 @@
     "Mustache": true,
     "$": true
   },
-  "no-unused-variable": false,
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 6,
