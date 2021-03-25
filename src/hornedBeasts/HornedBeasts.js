@@ -28,10 +28,8 @@ class HornedBeasts extends React.Component {
         <Card.Body>
           <Card.Title>{this.props.name}</Card.Title>
           <Card.Text>
-            {/* <p>Horns: {this.props.horns}</p>
-            <p>Type: {this.props.type}</p> */}
             <p>{this.props.description}</p>
-            <p>❤️{this.state.voteCount}</p>
+            <p data-testid="vote-count">❤️ {this.state.voteCount}</p>
           </Card.Text>
         </Card.Body>
       </Card>
