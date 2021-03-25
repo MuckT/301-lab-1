@@ -36,4 +36,4 @@ jobs:
           wait-on: http://localhost:3000
           browser: chrome
           headless: true
-          spec: cypress/integration/*.spec.js
+          spec: cypress/integration/HornedBeasts/*.spec.js
