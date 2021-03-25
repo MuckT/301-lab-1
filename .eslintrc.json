@@ -3,8 +3,10 @@
     "Mustache": true,
     "$": true
   },
-  "no-unused-variable": false,
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:cypress/recommended"
+  ],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",

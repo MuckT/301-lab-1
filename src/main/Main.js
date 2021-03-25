@@ -1,22 +1,27 @@
 import React from 'react';
-import HornedBeasts from './HornedBeasts';
+import data from '../constants/data.json';
+
+import HornedBeasts from '../hornedBeasts/HornedBeasts';
+import { CardColumns } from 'react-bootstrap';
 import './Main.css';
-import hornedBeastsConstants from './constants/hornedBeastConstants';
 
 class Main extends React.Component {
   render() {
     let beasts = [];
-    hornedBeastsConstants.forEach((item) => {
+    data.forEach((item, index) => {
       beasts.push(
         <HornedBeasts
+          key={index}
           name={item.title}
           title={item.title}
           imgUrl={item.image_url}
           description={item.description}
+          type={item.keyword}
+          horns={item.horns}
         />
       );
     });
-    return <main>{beasts}</main>;
+    return <main><CardColumns>{beasts}</CardColumns></main>;
   }
 }
 
