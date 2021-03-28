@@ -1,4 +1,4 @@
-# 301-lab-1, 301-lab-2
+# 301-lab-1, 301-lab-2, 301-lab-3
 
 ## Tasks to Complete
 
@@ -32,8 +32,21 @@ Finish time: 10:10
 
 Actual time needed to complete: 1 hour 10 minutes
 
+### 4. Display a Modal
+
+Estimate of time needed to complete: 3 hour
+
+Start time: 1:00pm
+
+Finish time: 7:30pm (Many Breaks)
+
+Actual time needed to complete: 4hrs
 ## Resources
 
 [How to loop inside React](https://flaviocopes.com/react-how-to-loop/)
 
 [Adding a Stylesheet](https://create-react-app.dev/docs/adding-a-stylesheet/)
+
+[How to Hide Scrollbars](https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp)
+
+[How can i set the content of reactstrap modal-header in center?](https://stackoverflow.com/questions/54597870/how-can-i-set-the-content-of-reactstrap-modal-header-in-center)

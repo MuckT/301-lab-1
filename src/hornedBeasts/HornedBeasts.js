@@ -2,6 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap';
+
 import './HornedBeast.css';
 
 class HornedBeasts extends React.Component {
@@ -19,18 +20,17 @@ class HornedBeasts extends React.Component {
     this.setState(state => ({
       voteCount: state.voteCount + 1
     }));
+    this.props.handleSelectChange(this.props.title);
   }
 
   render() {
     return (
       <Card onClick={this.handleClick} className="mb-2 card bg-light text-dark text-center" style={{ width: '100%' }}>
-        <Card.Img alt={this.props.name + ' image'} variant="top" src={this.props.imgUrl} />
+        <Card.Img alt={this.props.title + ' image'} variant="top" src={this.props.image_url} />
         <Card.Body>
-          <Card.Title>{this.props.name}</Card.Title>
-          <Card.Text>
-            <p>{this.props.description}</p>
-            <p data-testid="vote-count">❤️ {this.state.voteCount}</p>
-          </Card.Text>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>{this.props.description}</Card.Text>
+          <Card.Text data-testid="vote-count">❤️ {this.state.voteCount}</Card.Text>
         </Card.Body>
       </Card>
     );
