@@ -1,6 +1,6 @@
 import data from '../../../src/constants/data.json';
 
-describe('Main Tests', () => {
+describe('Main', () => {
   before(() => {
     cy.visit('');
   });
@@ -33,7 +33,7 @@ describe('Main Tests', () => {
   });
 });
 
-describe('Modal Tests', () => {
+describe('Modal', () => {
   beforeEach(() => {
     cy.visit('');
   });
@@ -57,5 +57,43 @@ describe('Modal Tests', () => {
     cy.get('.modal').should('be.visible');
     cy.get('[data-testid=modal-footer-close]').click();
     cy.get('.modal').should('not.exist');
+  });
+});
+
+describe('Audits', () => {
+  beforeEach(() => {
+    cy.visit('');
+  });
+
+  it('should pass lighthouse audit (desktop)', () => {
+    cy.lighthouse(
+      {
+        accessibility: 100,
+        'best-practices': 87
+      },
+      {
+        formFactor: 'desktop',
+        screenEmulation: {
+          mobile: false,
+          width: 1920,
+          height: 1080,
+          deviceScaleFactor: 1,
+          disabled: false,
+        },
+      }
+    );
+  });
+
+  it('should pass lighthouse audit (mobile)', () => {
+    cy.lighthouse(
+      {
+        accessibility: 100,
+        'best-practices': 87
+      }
+    );
+  });
+
+  it('should pa11y audit', () => {
+    cy.pa11y();
   });
 });
