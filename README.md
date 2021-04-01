@@ -41,6 +41,17 @@ Start time: 1:00pm
 Finish time: 7:30pm (Many Breaks)
 
 Actual time needed to complete: 4hrs
+
+### 5. Filter by Numbers of Horns
+
+Estimate of time needed to complete: 3 hour
+
+Start time: 7:10pm
+
+Finish time:
+
+Actual time needed to complete:
+
 ## Resources
 
 [How to loop inside React](https://flaviocopes.com/react-how-to-loop/)
