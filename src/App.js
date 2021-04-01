@@ -6,6 +6,7 @@ import Footer from './footer/Footer';
 import data from './constants/data.json';
 
 import './App.css';
+import HornForm from './filterHorns/HornForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,6 +39,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
+        <HornForm data={data}/>
         <SelectedBeast beast={this.state.selectedBeast} display={this.state.display} displayFlipper={this.displayFlipper}/>
         <Main handleSelectChange={this.handleSelectChange} data={data}/>
         <Footer />

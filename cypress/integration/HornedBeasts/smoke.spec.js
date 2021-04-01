@@ -93,7 +93,7 @@ describe('Audits', () => {
     );
   });
 
-  it('should pa11y audit', () => {
+  it.skip('should pa11y audit', () => {
     cy.pa11y();
   });
 });
