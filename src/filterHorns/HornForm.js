@@ -11,8 +11,8 @@ class HornForm extends React.Component {
       horns.push(item.horns);
     });
     let uniqueOptions = [...new Set(horns)];
-    uniqueOptions.forEach(item => {
-      options.push(<option value={item}>{item}</option>);
+    uniqueOptions.forEach((item, index) => {
+      options.push(<option key={index} value={item}>{item}</option>);
     });
     return (
       <Form>
