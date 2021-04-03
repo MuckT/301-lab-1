@@ -1,4 +1,28 @@
-# 301-lab-1, 301-lab-2, 301-lab-3
+# 301-lab-1, 301-lab-2, 301-lab-3, 301-lab-4
+
+## Running the App
+
+### Install dependencies
+
+```bash
+yarn 
+```
+
+### Serve App Locally
+
+```bash
+yarn start
+```
+
+### Running e2e tests
+
+```bash
+# Run Scripts in Cypress Test Runner
+yarn e2e:open
+
+# Run Scripts in CLI
+yarn e2e:run
+```
 
 ## Tasks to Complete
 
