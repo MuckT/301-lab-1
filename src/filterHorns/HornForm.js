@@ -12,7 +12,7 @@ class HornForm extends React.Component {
     });
     let uniqueOptions = [...new Set(horns)];
     uniqueOptions.forEach((item, index) => {
-      options.push(<option key={index} value={item}>{item}</option>);
+      options.push(<option aria-label={item} key={index} value={item}>{item}</option>);
     });
     return (
       <Form>
